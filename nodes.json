@@ -1,0 +1,159 @@
+[
+    {
+        "type": "perlinNoise",
+        "title": "Perlin Noise",
+        "params": [
+            { "name": "scale", "label": "Scale", "type": "number", "default": 50 },
+            { "name": "octaves", "label": "Octaves", "type": "number", "default": 4 },
+            { "name": "persistence", "label": "Persistence", "type": "number", "default": 0.5 },
+            { "name": "lacunarity", "label": "Lacunarity", "type": "number", "default": 2.0 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 },
+            { "name": "offsetX", "label": "Offset X", "type": "number", "default": 0 },
+            { "name": "offsetY", "label": "Offset Y", "type": "number", "default": 0 },
+            { "name": "exponent", "label": "Exponent", "type": "number", "default": 1 },
+            { "name": "clampMin", "label": "Clamp Min", "type": "number", "default": 0 },
+            { "name": "clampMax", "label": "Clamp Max", "type": "number", "default": 1 }
+        ]
+    },
+    {
+        "type": "fractalNoise",
+        "title": "Fractal Noise",
+        "params": [
+            { "name": "scale", "label": "Scale", "type": "number", "default": 100 },
+            { "name": "octaves", "label": "Octaves", "type": "number", "default": 4 },
+            { "name": "persistence", "label": "Persistence", "type": "number", "default": 0.5 },
+            { "name": "lacunarity", "label": "Lacunarity", "type": "number", "default": 2.0 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "river",
+        "title": "River",
+        "params": [
+            { "name": "riverWidth", "label": "Width", "type": "range", "min": 1, "max": 20, "step": 1, "default": 2 },
+            { "name": "numHeadwaters", "label": "Number of Headwaters", "type": "range", "min": 1, "max": 100, "step": 1, "default": 10 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 },
+            { "name": "erosionRate", "label": "Erosion Rate", "type": "range", "min": 0.01, "max": 0.1, "step": 0.01, "default": 0.01 },
+            { "name": "maxLength", "label": "Max Length", "type": "range", "min": 100, "max": 2000, "step": 100, "default": 1000 }
+        ]
+    },
+    {
+        "type": "erosion",
+        "title": "Erosion",
+        "params": [
+            { "name": "iterations", "label": "Iterations", "type": "number", "default": 2000 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 },
+            { "name": "erosionFactor", "label": "Erosion Factor", "type": "number", "default": 0.1 }
+        ]
+    },
+    {
+        "type": "ridge",
+        "title": "Ridge",
+        "params": [
+            { "name": "heightFactor", "label": "Height Factor", "type": "number", "default": 50 },
+            { "name": "widthFactor", "label": "Width Factor", "type": "number", "default": 30 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "thermalWeathering",
+        "title": "Thermal Weathering",
+        "params": [
+            { "name": "iterations", "label": "Iterations", "type": "number", "default": 2000 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "voronoi",
+        "title": "Voronoi",
+        "params": [
+            { "name": "cells", "label": "Cells", "type": "number", "default": 50 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "terrace",
+        "title": "Terrace",
+        "params": [
+            { "name": "levels", "label": "Levels", "type": "number", "default": 5 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "valley",
+        "title": "Valley",
+        "params": [
+            { "name": "depth", "label": "Depth", "type": "number", "default": 20 },
+            { "name": "width", "label": "Width", "type": "number", "default": 50 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "mountain",
+        "title": "Mountain",
+        "params": [
+            { "name": "height", "label": "Height", "type": "number", "default": 50 },
+            { "name": "width", "label": "Width", "type": "number", "default": 30 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "hydraulicErosion",
+        "title": "Hydraulic Erosion",
+        "params": [
+            { "name": "iterations", "label": "Iterations", "type": "number", "default": 1000 },
+            { "name": "rainAmount", "label": "Rain Amount", "type": "number", "default": 0.01 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "lake",
+        "title": "Lake",
+        "params": [
+            { "name": "size", "label": "Size", "type": "number", "default": 20 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 },
+            { "name": "waterLevel", "label": "Water Level", "type": "number", "default": 0.5 }
+        ]
+    },
+    {
+        "type": "combiner",
+        "title": "Combiner",
+        "params": [
+            { "name": "type", "label": "Type", "type": "text", "default": "add" },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "coastErosion",
+        "title": "Coast Erosion",
+        "params": [
+            { "name": "iterations", "label": "Iterations", "type": "number", "default": 2000 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 },
+            { "name": "waveStrength", "label": "Wave Strength", "type": "number", "default": 0.1 }
+        ]
+    },
+    {
+        "type": "curves",
+        "title": "Curves",
+        "params": [
+            { "name": "amount", "label": "Amount", "type": "number", "default": 0.1 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "vegetation",
+        "title": "Vegetation",
+        "params": [
+            { "name": "density", "label": "Density", "type": "number", "default": 0.1 },
+            { "name": "seed", "label": "Seed", "type": "number", "default": 42 }
+        ]
+    },
+    {
+        "type": "texture",
+        "title": "Texture",
+        "params": [
+            { "name": "type", "label": "Type", "type": "text", "default": "sand" },
+            { "name": "intensity", "label": "Intensity", "type": "number", "default": 0.5 }
+        ]
+    }
+]
